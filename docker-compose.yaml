@@ -6,12 +6,12 @@ services:
     # Must be logged in to dockerhub to push, but not to pull container code from dockerhub. 
     # image: [HOST]/[AUTHOR]/[APPLICATION]:[TAG]
     # Build the Dockerfile that exists in this location
-    image: neotaxman007/yugioh-project-flask-app:latest
+    #image: neotaxman007/yugioh-project-flask-app:latest
     build: ./flask-app
     container_name: flask-app
 
   mysql: 
-    image: neotaxman007/yugioh-project-mysql:latest
+    #image: neotaxman007/yugioh-project-mysql:latest
     build: ./db
     container_name: mysql
     ports:
@@ -19,14 +19,14 @@ services:
         published: 3306
     
     environment: 
-      MYSQL_ALLOW_EMPTY_PASSWORD: true
-      MYSQL_ROOT_PASSWORD: ${ROOT_PASSWORD} 
-      MYSQL_DATABASE: flask-app
+      #MYSQL_ALLOW_EMPTY_PASSWORD: true
+      MYSQL_ROOT_PASSWORD: password 
+      #MYSQL_DATABASE: flask-app
 
   # This is going to be where I put my configuration to create my nginx container 
   nginx:
   # If this image is not available locally we will pull it from dockerhub. 
-    image: neotaxman007/nginx:latest
+    image: nginx:latest
     # Give container a name 
     container_name: nginx
     # Is where we specify ports for the container
