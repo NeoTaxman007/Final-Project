@@ -1,0 +1,22 @@
+{% block body_content %}
+
+<h1> Yu-Gi-Oh! Duel Monster Trading Card Game [Database] </h1>
+{% for mname in mnames %}
+<p> Card ID: {{ mname.id }} </p>
+<p> Card Star Level: {{ mname.stars }} </p>
+<p> Card Name: {{ mname.name }} </p>
+
+<!-- <p> {{ mname.fk_typeid }} </p> -->
+
+
+{% endfor %}
+
+{% for mtype in mtypes %}
+
+<p> {{ mtype.id }} </p>
+<p> Card Type: {{ mtype.type }} </p>
+
+
+{% endfor %}
+
+{% endblock body_content %}
