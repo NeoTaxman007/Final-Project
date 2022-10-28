@@ -49,3 +49,17 @@ The control measure implemented in the project will demostrate the risk assesmen
 * The credentuals will be stored as a secret text via Jenkins VMs and exported as environment variable to avoid releasing confidential information.
 
 The likelihood and impact level of each risk identified were estimated before and after the implementation of each control measures, to quantify the effect of potential control measures and implementation.
+
+## The Unit-Tests
+
+Testing the flask app was an essential part for the project and by extension the development process. It was required to test the app itself via unit testing, which were written for the create, read, update and delete functionality to verify the app performance and to achieve high coverage. For the project the unit-testing will be conducted on several files to achieve the 200 return response.   
+
+It is to note, tests such as security and performance were part of the project scope, only the testing in terms of functionality was conducted. The tests will be automated via Jenkins and interfaced with Github webhooks to demostrate the automation when a change is made to the code. A successful build, in which all test passed, is illustrated below: 
+
+![22](https://user-images.githubusercontent.com/108364254/198747528-cd3082a7-f23f-4b2d-ae86-768d479fde2e.PNG)
+
+The coverage report shows unit-test at 100% archived during post-build:
+
+![22222222222222](https://user-images.githubusercontent.com/108364254/198748277-423eb67e-83e5-4421-a87f-ffa7bcc36881.PNG)
+
+
