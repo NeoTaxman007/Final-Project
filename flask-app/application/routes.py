@@ -73,12 +73,17 @@ def updatename(id):
     form = Monsterform()
     #Retrieves one duel monster name via specified ID.
     name = MonsterName.query.get(id)
+    star = MonsterName.query.get(id)
+    #star = Monsterform.query.get(id)
     #POST method & if the user clicks the submit button.
     if form.validate_on_submit():
         #The data is edited relative to the new information via the user.
         name.name = form.name.data
+        star.stars = form.stars.data
+        
         
         #Commit the updated changes
+        
         db.session.commit()
         #Redirects the URL via the index function
         return redirect(url_for("index"))

@@ -1,5 +1,8 @@
 data.db 
+test.db
+__pycache__
 application/__pycache__
 application/tests/__pycache__
 application/tests/.pytest_cache
 application/tests/.coverage
+application/tests/htmlcov
