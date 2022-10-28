@@ -28,7 +28,7 @@ The ERD diagram illustrates the functionality of the MySQL database. The foreign
 ## The CI/CD Pipeline 
 The project required the implementation of several stages of a automated CI/CD pipeline. These included: version control, development enviroment and a build server.
 
-////INSERT IMAGE HERE////
+![cicd-pipeline-1536x532](https://user-images.githubusercontent.com/108364254/198750152-57c62135-4616-45f3-8acb-f510a35239c3.png)
 
 Github was used for version control the project respository hosted via Github.com. In terms of version control via Github this allows updates to the project to be commited and pushed, whilst keeping the commit history for access to previous versions. The Github as a repository allows the repository to host the service and to be stored via the development enviroment, in addition providing webhooks, which sends HTTP POST requests to the build server to automate both the build and the unit-testing.
   
