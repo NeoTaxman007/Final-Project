@@ -1,5 +1,5 @@
 data.db 
-application/__pycache__
-application/tests/__pycache__
-application/tests/.pytest_cache
-application/tests/.coverage
+flask-app/application/__pycache__
+flask-app/application/tests/__pycache__
+flask-app/application/tests/.pytest_cache
+flask-app/application/tests/.coverage
