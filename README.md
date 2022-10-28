@@ -26,7 +26,7 @@ In terms of the design I have chosen to build a Yu-Gi-Oh! database app, which al
 The ERD diagram illustrates the functionality of the MySQL database. The foreign key is assiocated with the duel monster name and level, where card ID will be linked via both the name and type relationship.
 
 ## The CI/CD Pipeline 
-The project required the implementation of several stages of a automated CI/CD pipeline. These included: versiom control, development enviroment and an build server.
+The project required the implementation of several stages of a automated CI/CD pipeline. These included: version control, development enviroment and a build server.
 
 ////INSERT IMAGE HERE////
 
