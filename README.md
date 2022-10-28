@@ -62,4 +62,6 @@ The coverage report shows unit-test at 100% archived during post-build:
 
 ![22222222222222](https://user-images.githubusercontent.com/108364254/198748277-423eb67e-83e5-4421-a87f-ffa7bcc36881.PNG)
 
+All tests must pass for a build to be successful, a single failed test means the overall build failed.
+
 
