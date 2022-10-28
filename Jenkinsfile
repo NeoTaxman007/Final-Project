@@ -5,7 +5,7 @@ pipeline {
             steps {
                 dir('flask-app'){
                     sh "echo this is a test"
-                    sh "application/tests/chmod +x test_app.py*"
+                    sh "sudo application/tests/test_app.py"
                     sh "bash test.sh"
                 }
             }
