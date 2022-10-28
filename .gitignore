@@ -1,2 +1,5 @@
 data.db 
 application/__pycache__
+application/tests/__pycache__
+application/tests/.pytest_cache
+application/tests/.coverage

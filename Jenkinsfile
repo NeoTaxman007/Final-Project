@@ -5,13 +5,13 @@ pipeline {
             steps {
                 dir('flask-app'){
                     sh "echo this is a test"
-                    // sh "rm application/test/test_int*"
-                    // sh "bash test.sh"
+                    sh "rm application/test/test_int*"
+                    sh "bash test.sh"
                 }
             }
         }
 
-        stage('docker-compose build and run') {
+        stage('Docker-Compose Build and Run') {
             steps {
                 sh "/bin/bash -c 'docker stop \$(docker ps -a -q)'"
                 sh "/bin/bash -c 'docker rm \$(docker ps -a -q)'"
