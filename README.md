@@ -36,9 +36,9 @@ The development environment used was Python3 virtual environment (venv) hosted o
 
 Jenkins will be used as the build server to provide the automation for both the build and the unit-testing. It is to note the automation is achieved by setting up a freestyle project, which will execute the test.sh script when it recieves the webhook via Github (files needs to commited then pushed). Jenkins will also be used to run the app via Gunicorn, achieved when testing is completed.
 
-////INSERT IMAGE HERE////
-  
- ## The Risk Assessment
+![222222222222222222222222222](https://user-images.githubusercontent.com/108364254/198751956-e3b7d3cd-7c87-4f4e-bc91-acecdeb75762.jpg)
+
+## The Risk Assessment
  
 Before buidling the web app, a risk assessment was conducted to identify and to propose measure to control the potential risks that could affect the process for deploying the app. The measure will then be implemented in the app, the initial risk assesment is illustrated below:
 
