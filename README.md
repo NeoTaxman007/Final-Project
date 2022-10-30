@@ -78,7 +78,7 @@ The user is redirected to the page, which allows them add the monstername for th
 
 ![flask3](https://user-images.githubusercontent.com/108364254/198895468-bfb77199-bc54-48ba-89ac-64c5ef86e108.PNG)
 
-As stated earlier, the user can update and delete both the monster name and type by entering: [http://192.168.33.22:5000/updatename/1],[http://192.168.33.22:5000/updatetype/1], [http://192.168.33.22:5000/deletename/1], and [http://192.168.33.22:5000/deletename/1]. It is worth noting the value 1 corresponds to the card ID when the user creates the information.
+As stated earlier, the user can update and delete both the monster name and type by entering: [192.168.33.22:5000/updatename/1], [192.168.33.22:5000/updatetype/1],[192.168.33.22:5000/deletename/1], and 192.168.33.22:5000/deletename/1]. It is worth noting the value 1 corresponds to the card ID when the user first creates the information.
 
 
 
