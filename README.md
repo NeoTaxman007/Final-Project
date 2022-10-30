@@ -18,6 +18,8 @@ The aim for the project was to design a flask application intergrated with a dat
 
 The diagram illusrates the basic premise of the web app functionality. The HTML will acts as the front-end interfaced with the Flask micro-framework via Python to execute the logic and the information is stored via MySQL database, both the micro-framework and database acts as the back-end server. 
 
+The diagram below illustrates how the flask app will be deployed using Microsoft Azure resources (VMs) and how the build server will be deployed. 
+
 ![yugioh-project (1)](https://user-images.githubusercontent.com/108364254/198905097-71f21986-4bfd-4187-aff5-fa546fa147f5.png)
 
 The app will be hosted and deployed using containers, and a CI/CD pipeline must be used to automatically test, build, and delpoy the application.
