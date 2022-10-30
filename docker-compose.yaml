@@ -1,28 +1,33 @@
 # File version, must always be the first entry in a docker-compose file. 
 version: "3.8"
 # The services will be the seperate containers you wish to run. This example is nginx. 
-services: 
-  flask-app: 
-    # Must be logged in to dockerhub to push, but not to pull container code from dockerhub. 
-    # image: [HOST]/[AUTHOR]/[APPLICATION]:[TAG]
-    # Build the Dockerfile that exists in this location
-    #image: neotaxman007/yugioh-project-flask-app:latest
-    build: ./flask-app
-    container_name: flask-app
-
   mysql: 
-    #image: neotaxman007/yugioh-project-mysql:latest
+    image: neotaxman007/yugioh-project-mysql:latest
     build: ./db
     container_name: mysql
     ports:
       - target: 3306
         published: 3306
     
-    environment: 
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       #MYSQL_ALLOW_EMPTY_PASSWORD: true
-      MYSQL_ROOT_PASSWORD: password 
+      #MYSQL_ROOT_PASSWORD: password 
       #MYSQL_DATABASE: flask-app
-
+services: 
+  flask-app: 
+    # Must be logged in to dockerhub to push, but not to pull container code from dockerhub. 
+    # image: [HOST]/[AUTHOR]/[APPLICATION]:[TAG]
+    # Build the Dockerfile that exists in this location
+    image: neotaxman007/yugioh-project-flask-app:latest
+    build: ./flask-app
+    container_name: flask-app
+    enviroment:
+    DATABASE_URI: ${DATABASE_URI}
+    SECRET_KEY: ${SECRET_KEY}
+    depends_on:
+    -mysql
+    
   # This is going to be where I put my configuration to create my nginx container 
   nginx:
   # If this image is not available locally we will pull it from dockerhub. 
