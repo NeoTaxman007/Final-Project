@@ -1,7 +1,7 @@
-# Yu-Gi-Oh-Project
+# The Yu-Gi-Oh-Project
 
 ## Contents:
-* [The Project Brief](#Project-Brief)  
+* [The Project Brief](#The-Project-Brief)  
 * [The App Design](#App-Design)
 * [The CI/CD Pipeline](#CI-Pipeline)  
 * [Risk Assessment](#Risk-Assessment)
