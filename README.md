@@ -1,11 +1,11 @@
 # Yu-Gi-Oh-Project
 
 ## Contents:
-* [Project Brief](#Project-Brief)  
-* [App Design](#App-Design)
-* [CI Pipeline](#CI-Pipeline)  
+* [The Project Brief](#Project-Brief)  
+* [The App Design](#App-Design)
+* [The CI/CD Pipeline](#CI-Pipeline)  
 * [Risk Assessment](#Risk-Assessment)
-* [Testing](#Testing)
+* [The Unit-Testing](#Testing)
 * [The App](#The-App)
 * [Updates](#Updates)
 * [Known Issues](#Known-Issues)
@@ -70,10 +70,15 @@ When navigating to the app the user is presented with the hompage as illustrated
 
 ![flask1](https://user-images.githubusercontent.com/108364254/198894895-e387c752-f74d-45c3-8472-01851161caec.PNG)
 
-The user can navigate to a different page to add, update, and delete the data via the URL. To add the monster the user will enter [http://192.168.33.22:5000/monstername] as illustrated below:
-!
-[flask2](https://user-images.githubusercontent.com/108364254/198895182-2266639b-78d0-48de-b8f8-27120200cc27.PNG)
+The user can navigate to a different page to add, update, and delete the data via the URL. To add the monster name and type the user will enter [http://192.168.33.22:5000/monstername] and [http://192.168.33.22:5000/monstertype] respectively as illustrated below:
 
+![flask2](https://user-images.githubusercontent.com/108364254/198895182-2266639b-78d0-48de-b8f8-27120200cc27.PNG)
+
+The user is redirected to the page, which allows them add the monstername for the database. The new information (monster name and type) is be displayed the via the home page as illustratrated below:
+
+![flask3](https://user-images.githubusercontent.com/108364254/198895468-bfb77199-bc54-48ba-89ac-64c5ef86e108.PNG)
+
+As stated earlier, the user can update and delete both the monster name and type by entering: [http://192.168.33.22:5000/updatename/1],[http://192.168.33.22:5000/updatetype/1], [http://192.168.33.22:5000/deletename/1], and [http://192.168.33.22:5000/deletename/1]. It is worth noting the value 1 corresponds to the card ID when the user creates the information.
 
 
 
