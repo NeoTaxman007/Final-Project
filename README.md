@@ -38,6 +38,8 @@ Jenkins will be used as the build server to provide the automation for both the 
 
 ![222222222222222222222222222](https://user-images.githubusercontent.com/108364254/198751956-e3b7d3cd-7c87-4f4e-bc91-acecdeb75762.jpg)
 
+Docker containers were used in this project to create 3 packages: the flask application, the MySQL database, and Nginx. Deploying these 3 containers hosts the application on the local public IP, connects it to the database, and allows access via a reverse proxy. These were uploaded to Dockerhub for use with the Dockercompose and Dockerswarm. A docker compose file was used to define and run these containers using a single command. This was further expanded by using docker swarm deployment. Using two virtual machines (master and worker nodes), I am able to run the containers as a service, and deploy them across two machines. I can access my app via the public IP addresses of the machines.
+
 ## The Risk Assessment
  
 Before buidling the web app, a risk assessment was conducted to identify and to propose measure to control the potential risks that could affect the process for deploying the app. The measure will then be implemented in the app, the initial risk assesment is illustrated below:
