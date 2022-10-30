@@ -64,4 +64,17 @@ The coverage report shows unit-test at 100% archived during post-build:
 
 All tests must pass for a build to be successful a single point failure means the overall test build failed and therefore the tests have been intergrated into CI/CD pipeline via Jenkins.
 
+## The App
+
+When navigating to the app the user is presented with the hompage as illustrated below:
+
+![flask1](https://user-images.githubusercontent.com/108364254/198894895-e387c752-f74d-45c3-8472-01851161caec.PNG)
+
+The user can navigate to a different page to add, update, and delete the data via the URL. To add the monster the user will enter [http://192.168.33.22:5000/monstername] as illustrated below:
+!
+[flask2](https://user-images.githubusercontent.com/108364254/198895182-2266639b-78d0-48de-b8f8-27120200cc27.PNG)
+
+
+
+
 
