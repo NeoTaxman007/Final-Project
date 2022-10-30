@@ -4,7 +4,7 @@
 * [The Project Brief](#The-Project-Brief)  
 * [The App Design](#The-App-Design)
 * [The CI/CD Pipeline](#The-CI/CD-Pipeline)  
-* [Risk Assessment](#The-Risk-Assessment)
+* [The Risk Assessment](#The-Risk-Assessment)
 * [The Unit-Testing](#The-UnitTesting)
 * [The App](#The-App)
 * [Updates](#Updates)
