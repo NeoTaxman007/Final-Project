@@ -41,10 +41,12 @@ Jenkins will be used as the build server to provide the automation for both the 
 The Docker containers was used to containerise and deploy the flask app by creating 3 images: the flask application, the MySQL datavase, and the Nginx reverse proxy. By deploying the containers via the host application on the local public IP address (Azure virtual machines), which connects it to the database and allows access via the reverse proxy itself. The docker images were created using a automated server Jenkins, which was then uploaded to the Dockerhub and again using Jenkins the images will be pulled through the stack deployment serving the Dockerswarm servers (manager and worker nodes). It is worth noting the docker-compose file was used to execute and the run the containers via a single command. The flask app can now be accessed via the public IP addresses of the two virtual machines.
 
 ## The Risk Assessment
- 
 Before buidling the web app, a risk assessment was conducted to identify and to propose measure to control the potential risks that could affect the process for deploying the app. The measure will then be implemented in the app, the initial risk assesment is illustrated below:
 
-![Picture8](https://user-images.githubusercontent.com/108364254/197365789-188f763d-005d-4369-9af0-e750a6bf75d3.png)
+![table1](https://user-images.githubusercontent.com/108364254/198903128-2b4fc2c8-d7ed-446c-b01b-5a35ec5e5d75.jpg)
+
+![table2](https://user-images.githubusercontent.com/108364254/198903153-473e69d2-dcc0-48de-8736-47aec98336f1.jpg)
+
 The control measure implemented in the project will demostrate the risk assesment in terms of:
 * The user profiles per database was not part of the initial design, as this would reqire sending an authentication process via unsecured HTTP connection.
 * The SQLAlchemy was inerfaced with the Flask micro-framework to prevent MySQL commands being sent directly via the database.
