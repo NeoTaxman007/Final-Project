@@ -1,4 +1,4 @@
-# File version, must always be the first entry in a docker-compose file. s
+# File version, must always be the first entry in a docker-compose file.
 version: "3.8"
 # The services will be the seperate containers you wish to run. This example is nginx. 
   mysql: 
