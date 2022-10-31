@@ -17,9 +17,9 @@ The aim for the project was to design a flask application intergrated with a dat
 
 The diagram illusrates the basic premise of the web app functionality. The HTML will acts as the front-end interfaced with the Flask micro-framework via Python to execute the logic and the information is stored via MySQL database, both the micro-framework and database acts as the back-end server. 
 
-The diagram below illustrates how the flask app will be deployed using Microsoft Azure resources and how the build server will be deployed. The app will be hosted and deployed using containers, and a CI/CD pipeline will be used in conjuction to automatically test, build, and delpoy the application.
-
 ![yugioh-project (2)](https://user-images.githubusercontent.com/108364254/198905242-b2145ea1-466b-40af-85db-85e098040a1e.png)
+
+The diagram illustrates how the flask app will be deployed using Microsoft Azure resources and how the build server will be deployed. The app will be hosted and deployed using containers, and a CI/CD pipeline will be used in conjuction to automatically test, build, and delpoy the application.
 
 ## The App Design
 In terms of the design I have chosen to build a Yu-Gi-Oh! database app, which allows users to create their favourite duel monster card and linking the monster type (create function). The new data will be displayyed via the home page (read function), users can also update the current data, i.e. the ID of the duel monster card is linked to the card name and type (update function), additionally the user can also delete the current data relative to the card ID (delete function). The database for this project consists of a duel monster name table and an duel monster type table, hence with each duel monster type is associated with multiple duel monster names (one-to-many relationship). The Entity Relationship Diagram is illustrated below:
