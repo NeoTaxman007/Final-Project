@@ -1,4 +1,4 @@
-pipeline {
+pipeline {z
     agent any 
     stages {
         stage('Tests') {
