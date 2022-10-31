@@ -88,6 +88,10 @@ The user is redirected to the page, which allows them add the monstername for th
 
 As stated earlier, the user can update and delete both the monster name and type by entering: [http://192.168.33.22:5000/updatename/1], [http://192.168.33.22:5000/updatetype/1], [http://192.168.33.22:5000/deletename/1], and [http://192.168.33.22:5000/deletename/1]. It is worth noting the value 1 corresponds to the card ID when the user first creates the new data. 
 
+## The Video
+Click the link below to see a full demostration of the application functionality, automation and deployment:
+https://drive.google.com/file/d/1XkX5XujwSve8QmNU9-B96VBXHra9eJD7/view
+
 ## Future Work
 The current applicaion uses my MySQL for the database service in the future I would like to connect the flask app directly to Microsoft Azure Database to demostrate effiency, reliability, and high availability. In addition, I would also like to add a upload feature where the user can upload a card image and linking it directly to the monster name and type, and when data is accessed the image and the card information can be referenced. Finally, I would like to improve the overall layout, presentation, and aesthetics of the application (banners, background colour, navigation bar, etc).
 
