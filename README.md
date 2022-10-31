@@ -90,7 +90,7 @@ The user is redirected to the page, which allows them add the monstername for th
 As stated earlier, the user can update and delete both the monster name and type by entering: [http://192.168.33.22:5000/updatename/1], [http://192.168.33.22:5000/updatetype/1], [http://192.168.33.22:5000/deletename/1], and [http://192.168.33.22:5000/deletename/1]. It is worth noting the value 1 corresponds to the card ID when the user first creates the new data. 
 
 ## The Video
-Click the link below to see a full demostration for the application functionality, automation and deployment:
+Click the link below to see a full demostration of the application functionality, automation and deployment:
 https://drive.google.com/file/d/1XkX5XujwSve8QmNU9-B96VBXHra9eJD7/view
 
 ## Future Work
