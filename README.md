@@ -7,7 +7,6 @@
 * [The Risk Assessment](#The-Risk-Assessment)
 * [The Unit-Testing](#The-UnitTesting)
 * [The App](#The-App)
-* [Updates](#Updates)
 * [Known Issues](#Known-Issues)
 * [Future Work](#Future-Work)
 
@@ -18,7 +17,7 @@ The aim for the project was to design a flask application intergrated with a dat
 
 The diagram illusrates the basic premise of the web app functionality. The HTML will acts as the front-end interfaced with the Flask micro-framework via Python to execute the logic and the information is stored via MySQL database, both the micro-framework and database acts as the back-end server. 
 
-The diagram below illustrates how the flask app will be deployed using Microsoft Azure resources (VMs) and how the build server will be deployed. The app will be hosted and deployed using containers, and a CI/CD pipeline must be used to automatically test, build, and delpoy the application.
+The diagram below illustrates how the flask app will be deployed using Microsoft Azure resources and how the build server will be deployed. The app will be hosted and deployed using containers, and a CI/CD pipeline will be used in conjuction to automatically test, build, and delpoy the application.
 
 ![yugioh-project (2)](https://user-images.githubusercontent.com/108364254/198905242-b2145ea1-466b-40af-85db-85e098040a1e.png)
 
@@ -73,7 +72,6 @@ The coverage report shows unit-test at 100% archived during post-build:
 All tests must pass for a build to be successful a single point failure means the overall test build failed and therefore the tests have been intergrated into CI/CD pipeline via Jenkins.
 
 ## The App
-
 When navigating to the app the user is presented with the hompage as illustrated below:
 
 ![flask1](https://user-images.githubusercontent.com/108364254/198894895-e387c752-f74d-45c3-8472-01851161caec.PNG)
@@ -89,7 +87,6 @@ The user is redirected to the page, which allows them add the monstername for th
 As stated earlier, the user can update and delete both the monster name and type by entering: [http://192.168.33.22:5000/updatename/1], [http://192.168.33.22:5000/updatetype/1], [http://192.168.33.22:5000/deletename/1], and [http://192.168.33.22:5000/deletename/1]. It is worth noting the value 1 corresponds to the card ID when the user first creates the new data. 
 
 ## Future Work
+The current applicaion uses my MySQL for the database service in the future I would like to connect the flask app directly to Microsoft Azure Database to demostrate effiency, reliability, and high availability. In addition, I would also like to add a upload feature where the user can upload a card image and linking it directly to the monster name and type, and when data is accessed the image and the card information can be referenced. Finally, I would like to improve the overall layout, presentation, and aesthetics of the application (banners, background colour, navigation bar, etc).
 
-
-..
 
