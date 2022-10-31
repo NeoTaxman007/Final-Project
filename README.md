@@ -94,6 +94,6 @@ Click the link below to see a full demostration of the application functionality
 https://drive.google.com/file/d/1XkX5XujwSve8QmNU9-B96VBXHra9eJD7/view
 
 ## Future Work
-The current applicaion uses my MySQL for the database service in the future I would like to connect the flask app directly to Microsoft Azure Database to demostrate effiency, reliability, and high availability. In addition, I would also like to add a upload feature where the user can upload a card image and linking it directly to the monster name and type, and when data is accessed the image and the card information can be referenced. Finally, I would like to improve the overall layout, presentation, and aesthetics of the application (banners, background colour, navigation bar, etc).
+The current applicaion uses my MySQL for the database service, in the future I would like to connect the flask app directly to Microsoft Azure Database to demostrate efficiency, reliability, and high availability. In addition, I would also like to add a upload feature where the user can upload a card image to the application and linking it directly to the monster name and type, and when data is accessed the image and the card information can be referenced. Finally, I would like to improve the overall layout, presentation, and aesthetics of the application (banners, background colour, navigation bar, etc).
 
 
