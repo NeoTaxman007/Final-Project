@@ -8,7 +8,6 @@
 * [The Unit-Testing](#The-UnitTesting)
 * [The App](#The-App)
 * [The Video](#The-Video)
-* [Known Issues](#Known-Issues)
 * [Future Work](#Future-Work)
 
 ## The Project Brief  
