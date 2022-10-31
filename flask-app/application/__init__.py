@@ -5,7 +5,7 @@ import os
 #Creating a flask object & rendering the templates folder.
 app = Flask(__name__, template_folder="templates")
 
-#Sets uo the database via SQLAlchemy sqlite.
+#Sets up the database via SQLAlchemy sqlite or creating enviroment variable to secure the data.
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI')
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password@mysql:3306/flask-db'
 #app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URI")
