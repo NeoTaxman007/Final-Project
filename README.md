@@ -37,6 +37,8 @@ Github was used for the version control; the project respository is hosted via G
   
 The development environment used was Python3 virtual environment (venv) hosted on a virtual machine running on Ubuntu 20.04. Python is used as the core mainframe and the Flask is a python-based micro-framework. The venv allows the pip to install the basic requirements.txt (see file) and the performance of the app to run without causing any conflicts when pip installs the modules on the same local machine or VMs.
 
+![cloud](https://user-images.githubusercontent.com/108364254/199006133-e277cdb7-105c-4895-89c1-239a330b330b.jpg)
+
 Jenkins will be used as the build server to provide the automation for both the build and the unit-testing. It is to note, the automation is achieved by setting up a freestyle project, which will execute the test.sh file once it recieves the Webhook via Github (files to be commited and pushed). Jenkins will also be used to run the app, this is only possible if the testing achieves high coverage.
 
 ![222222222222222222222222222](https://user-images.githubusercontent.com/108364254/198751956-e3b7d3cd-7c87-4f4e-bc91-acecdeb75762.jpg)
